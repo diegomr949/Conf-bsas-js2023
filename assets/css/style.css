@@ -4,7 +4,7 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/*-----------------------------------Navbar CSS------------------------------------*/
+/*-----------------------------------Barra navegacion CSS------------------------------------*/
 .container-nav{
     background-color: rgb(78, 77, 77);
 }
@@ -29,7 +29,8 @@
     padding: 0 !important;
     margin: 1vh !important;
 }
-/*-----------------------------Navbar query-------------------------------------------*/
+
+/*-----------------------------Barra navegacion query-------------------------------------------*/
 
 @media (max-width: 992px){
     .container-fluid{
@@ -89,6 +90,7 @@
         flex-direction: row !important;
       }
 }
+
 /*----------------------Informacion sobre la conferencia CSS----------------------------*/
 .Container-main{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ba1.jpg");
@@ -260,6 +262,7 @@
     margin-left: 1vh;
     background-color: rgb(141, 15, 15);
 }
+
 /*------------------------------------Oradores QUERYS---------------------------*/
 @media (max-width: 575.98px){
     .Container-JR{
@@ -281,6 +284,7 @@
             color:#000000;
             }
 }
+
 /*-------------------------------Información Geográfica CSS---------------------------------*/
 .Container-info{
    display: flex;
@@ -311,6 +315,7 @@
     width: 8vw;
     height: 8vh; 
 }
+
 /*-------------------------Información Geográfica QUERYS-------------------------------------*/
 
 @media (max-width: 576px){
@@ -396,6 +401,7 @@
         font-size: 1em;
     }
 }
+
 /*---------------Formulario CSS-----------------------*/
 
 .container-contact2 {
@@ -557,6 +563,7 @@ textarea.input2 {
         border-width: 0;
     } 
 }
+
 /*---------------------------FOOTER---------------------------------------------------*/
 
 .container-footer{
@@ -579,6 +586,7 @@ textarea.input2 {
     text-decoration: none;
     color: #fff;
 }
+
 /*------------------------------FOOTER QUERYS--------------------------------------*/
 @media (max-width: 576px){
     .container-footer{
@@ -628,3 +636,155 @@ textarea.input2 {
         font-size: .8em;
     }
 }
+
+
+/*------------------------------------TICKET----------*/
+.Container-tipo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    height: 60vh;
+    
+}
+.Container-estudiante{
+    width: 15vw;
+    text-align: center;
+    justify-content: center;
+    font-weight: 200;
+    border-color: #3277b8 !important;
+    
+}
+.Titulo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.Subt{
+    font-weight: 600;
+}
+.Porcentaje{
+    font-weight: 900;
+}
+.Documentacion{
+    color: #333;
+}
+
+.Container-trainee{
+    width: 15vw;
+    text-align: center;
+    font-weight: 200;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    justify-content: center;
+    border-color: #9dc8f0 !important;
+}
+
+.Container-junior{
+    width: 15vw;
+    text-align: center;
+    font-weight: 200;
+    justify-content: center;
+    border-color: yellow !important;
+}
+/*------------------------container---------------------*/
+@media (max-width: 576px){
+    .Container-tipo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+
+    }
+    .Container-estudiante{
+        padding: 0;
+        flex-direction: column;
+        width: 80%;
+    }
+    .Container-trainee{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        flex-direction: column;
+        width: 80%;
+    }
+    .Container-junior{
+        padding: 0;
+        flex-direction: column;
+        width: 80%;
+    }
+}
+@media (min-width: 577px) and (max-width: 1200px){
+    .Container-tipo{
+        display: flex;
+        justify-content: center;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .Container-estudiante{
+        flex-direction: column;
+        width: 80%;
+    }
+    .Container-trainee{
+        flex-direction: column;
+        width: 80%;
+    }
+    .Container-junior{
+        padding: 0;
+        flex-direction: column;
+        width: 80%;
+    }
+}
+
+/*----------------------------venta y valor de ticket--------*/
+
+section .ticket h2{
+    font-size: 1.5em;
+    color: black;
+}
+section .ticket h1{
+    font-weight: 600;
+    color: black;
+}
+
+/*----------------------------entradas---------*/
+.form-cant .wrap-contact2{
+    padding-top: 0;
+}
+.input3 {
+    width: 100%;
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    border-color: #d4cece;
+    border-width: 1px;
+    border-style: solid;
+    padding-top: 2vh;
+    padding-left: .2vw;
+    padding-bottom: 2vh;
+  }
+  .container-cyt{
+    display: flex;
+    width: 100%;
+  }
+
+  .container-cyt .input-groupcant .input2{
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  .container-cyt .wrap-input2 .input3{
+   width: 100%;
+  }
+.tot-pagar{
+    background-color: #accee2;
+    height: 8vh;
+    padding-left: .5vw;
+    display: flex;
+    align-items: center;
+    color: rgb(55, 75, 141);
+}
+
+  .container-foot-form-btn{
+    display: flex;
+  }
+  .container-foot-form-btn .borrar{
+    margin-right: 1vw;
+  }
